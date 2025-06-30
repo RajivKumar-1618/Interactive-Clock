@@ -1,5 +1,4 @@
 # live-clock-date-toggle
-<br>
 Author : RAJIV KUMAR GOND
 
 This is a basic project I made using HTML, CSS, and JavaScript. It shows the current time, and when I click on it, the full date appears. Clicking again hides it.
