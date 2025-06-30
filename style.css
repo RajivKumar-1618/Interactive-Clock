@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    109.9deg,
+    rgba(0, 174, 182, 1) 4.5%,
+    rgba(190, 223, 224, 1) 22.6%,
+    rgba(217, 198, 225, 1) 45.1%,
+    rgba(248, 178, 54, 1) 68.5%,
+    rgba(235, 105, 17, 1) 87.2%
+  );
+  font-family: sans-serif;
+  padding: 2vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  background-image: linear-gradient(
+    149.9deg,
+    rgba(41, 151, 255, 1) 13.5%,
+    rgba(191, 90, 242, 1) 47.6%,
+    rgba(255, 55, 95, 1) 78.8%
+  );
+  border-radius: 2vh;
+  padding: 4vh 6vw;
+  box-shadow: 0 0 5vh rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  max-width: 90vw;
+  .time {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12vw;
+    font-weight: bold;
+    text-shadow: -1vh 1vh 1vh rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  .Others {
+    display: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 6vw;
+    text-shadow: -0.8vh 0.8vh 1vh rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+}
+.container:hover,
+time.time:hover,
+.Others:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+  .time {
+    font-size: 8vh;
+  }
+  .Others {
+    font-size: 4vh;
+  }
+}
+@media (min-width: 1200px) {
+  .time {
+    font-size: 10vh;
+  }
+  .Others {
+    font-size: 5vh;
+  }
+}
